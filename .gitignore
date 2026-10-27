@@ -1,0 +1,90 @@
+# Dependencies and project-local caches
+node_modules/
+.npm-cache/
+.cache/
+.firecrawl/
+
+# Generated JavaScript and static site
+.build/
+dist/
+*.tsbuildinfo
+
+# Local environment values; keep safe example/template files versionable
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.template
+!.env.*.template
+
+# Runtime logs and diagnostic dumps
+*.log
+*.pid
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Preserve required verification evidence
+!/artifacts/**/*.log
+
+# Disposable test output and browser files; retain audit scripts and reports
+/coverage/
+/.nyc_output/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/artifacts/tmp/
+/artifacts/playwright-results/
+/artifacts/playwright-report/
+/artifacts/playwright-results.json
+/artifacts/hermes-playwright-report/
+/artifacts/hermes-playwright-results.json
+/artifacts/*.zip
+
+# Python tooling used by image and audit scripts
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# OS metadata and editor backup files
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Local coding-worker instructions and tool state (not application source)
+/.codex-*.md
+/.codex/
+/.agents/
+/.aws/
+
+# Keep only portable verification evidence, audit tools and original imagery
+/artifacts/*
+!/artifacts/final-verification.md
+!/artifacts/implementation-report.md
+!/artifacts/review-fixes-report.md
+!/artifacts/final-review.json
+!/artifacts/image-provenance.json
+!/artifacts/image-originals/
+!/artifacts/source-security-scan.json
+!/artifacts/hermes-dependency-audit.json
+!/artifacts/qa-dependency-audit.json
+!/artifacts/independent-static-audit.json
+!/artifacts/independent-runtime-audit.json
+!/artifacts/accessibility-audit.json
+!/artifacts/accessibility-red.json
+!/artifacts/review-regressions.json
+!/artifacts/review-regressions-red.log
+!/artifacts/review-regressions-green.log
+!/artifacts/independent-static-audit.py
+!/artifacts/independent-runtime-audit.mjs
+!/artifacts/accessibility-audit.mjs
+!/artifacts/review-regressions.mjs
+!/artifacts/prepare-images.py
+!/artifacts/qa/
+/artifacts/qa/*
+!/artifacts/qa/package.json
+!/artifacts/qa/package-lock.json

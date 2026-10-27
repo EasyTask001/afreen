@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "failures": [],
+  "evidence": {
+    "redirect": {
+      "status": 308,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'",
+        "Location": "/es/"
+      }
+    },
+    "emailValidation": [
+      {
+        "email": "x<@example.org",
+        "rejected": true
+      },
+      {
+        "email": "buyer@example..org",
+        "rejected": true
+      },
+      {
+        "email": "buyer@-example.org",
+        "rejected": true
+      }
+    ],
+    "browserEmailValidation": [
+      {
+        "email": "x<@example.org",
+        "invalid": true,
+        "nativeMismatch": true,
+        "prepared": false
+      },
+      {
+        "email": "buyer@example..org",
+        "invalid": true,
+        "nativeMismatch": true,
+        "prepared": false
+      },
+      {
+        "email": "buyer@-example.org",
+        "invalid": true,
+        "nativeMismatch": true,
+        "prepared": false
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "company",
+        "border": "rgb(89, 102, 93)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 5.522990962539233
+      },
+      {
+        "id": "email",
+        "border": "rgb(155, 57, 45)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 6.3770630328949105
+      },
+      {
+        "id": "message",
+        "border": "rgb(89, 102, 93)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 5.522990962539233
+      },
+      {
+        "id": "quantity-walnut",
+        "border": "rgb(89, 102, 93)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 5.522990962539233
+      },
+      {
+        "id": "unit-walnut",
+        "border": "rgb(89, 102, 93)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 5.522990962539233
+      }
+    ],
+    "touchTargets": [
+      {
+        "text": "Home",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "text": "Privacy",
+        "width": 44,
+        "height": 44
+      }
+    ]
+  }
+}

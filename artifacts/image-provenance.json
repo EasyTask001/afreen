@@ -1,0 +1,184 @@
+[
+  {
+    "name": "hero",
+    "source_url": "https://v3b.fal.media/files/b/0ab0171d/danoaNw66oLWvj4iGoXUd_uFnyOiCw.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/hero.png",
+    "webp": "public/images/hero.webp",
+    "dimensions": [
+      1024,
+      576
+    ],
+    "bytes": 75062,
+    "sha256": "6a358c87eacd2a2551b8092a887bc0b2868e5affdb46ef5629265b61d104c0d2"
+  },
+  {
+    "name": "walnut",
+    "source_url": "https://v3b.fal.media/files/b/0ab01729/tFGaYu-k-JWP8UMTJF7jf_SopZoeto.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/walnut.png",
+    "webp": "public/images/walnut.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 73922,
+    "sha256": "7b6f06ae92ccf8e16fc3adeafe31fd958c767f69fad6ffcb39c2089cd5bea0ec"
+  },
+  {
+    "name": "raisins",
+    "source_url": "https://v3b.fal.media/files/b/0ab01728/QiuRq71BjWiU9H3dj3Dy5_n6Wo2gCJ.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/raisins.png",
+    "webp": "public/images/raisins.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 107826,
+    "sha256": "9c0bc346a44052b66bcf227fe08fa93c36fae4e78919d49d7a8854207ed14d64"
+  },
+  {
+    "name": "almonds",
+    "source_url": "https://v3b.fal.media/files/b/0ab01728/wrHwf-38fkZDm5m-GUePP_p0v8UjwL.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/almonds.png",
+    "webp": "public/images/almonds.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 84330,
+    "sha256": "d711b62d2b14dc9617eac9fc547e1720010e5fc810e5aa5d80faec6db927bc0d"
+  },
+  {
+    "name": "orange",
+    "source_url": "https://v3b.fal.media/files/b/0ab01729/NaUVv5dJDi51oFPKJz8G-_sXNVlfrZ.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/orange.png",
+    "webp": "public/images/orange.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 77066,
+    "sha256": "c9edea429fab54affc11d34406dce64e22e8f4a33a0bee58a1ffb0524d960974"
+  },
+  {
+    "name": "apple",
+    "source_url": "https://v3b.fal.media/files/b/0ab01729/9UE0OAlOrGczTRxJe05bg_tUoV9QJc.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/apple.png",
+    "webp": "public/images/apple.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 55950,
+    "sha256": "ee8996ed78427b10f0051ca95315f135909ee002afe514d46f7537a43102d0d0"
+  },
+  {
+    "name": "mandarin",
+    "source_url": "https://v3b.fal.media/files/b/0ab01729/F8ws0l3G8lxy1aLXDPnfz_1paNnHQO.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/mandarin.png",
+    "webp": "public/images/mandarin.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 80716,
+    "sha256": "11e8e51289a04e23e6dd4be321885b42b5b630891f4d57dd1b84734524278918"
+  },
+  {
+    "name": "grapes",
+    "source_url": "https://v3b.fal.media/files/b/0ab0172a/GW7YzmOBUAqKMzvWw_VHU_uI6qPHeI.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/grapes.png",
+    "webp": "public/images/grapes.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 71076,
+    "sha256": "aa7659f0c1fad6195f5c5506ca30c968747b9f086f393d31536d5d70d7ae8d7e"
+  },
+  {
+    "name": "grapefruit",
+    "source_url": "https://v3b.fal.media/files/b/0ab0172a/YiPigoVqb6XH9bkN_PywU_xBa1Hw1R.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/grapefruit.png",
+    "webp": "public/images/grapefruit.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 74906,
+    "sha256": "202ba25154180f6768825ce1e660a1a60a074827272072d3c460720b1443a9fc"
+  },
+  {
+    "name": "avocado",
+    "source_url": "https://v3b.fal.media/files/b/0ab0172a/UWRU7mEJfdqmTNZnai80y_KeeZOWPq.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/avocado.png",
+    "webp": "public/images/avocado.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 94374,
+    "sha256": "bf6f532631353b160486d8790aeaade13535b0a37f530d10aca25f3b4abcf395"
+  },
+  {
+    "name": "lemon",
+    "source_url": "https://v3b.fal.media/files/b/0ab0172a/Y3NAPkL7u1bAghkpHWOOv_L0PIORWd.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/lemon.png",
+    "webp": "public/images/lemon.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 48884,
+    "sha256": "5c82ca6136c8c336b7582d3af47e51aac978551b8bfb1be533d7a6057d36fbb9"
+  },
+  {
+    "name": "beetroot",
+    "source_url": "https://v3b.fal.media/files/b/0ab0172b/RBYmE7S3elwAy1UycrbZz_NUURbWXQ.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/beetroot.png",
+    "webp": "public/images/beetroot.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 102068,
+    "sha256": "5c48b16a5fef629105cfca7934995e14dfdfb017a2ab926d0571f033708ccbca"
+  },
+  {
+    "name": "cherry",
+    "source_url": "https://v3b.fal.media/files/b/0ab0172b/D3T4OiaCHWgvX2pddgfDn_xTFJWomh.png",
+    "generated": true,
+    "purpose": "Illustrative produce photography; not actual stock or facilities",
+    "original": "artifacts/image-originals/cherry.png",
+    "webp": "public/images/cherry.webp",
+    "dimensions": [
+      1024,
+      1024
+    ],
+    "bytes": 81034,
+    "sha256": "e6a7df9e0a69c1cfe20148b0f84b91e0f5a3d9f9c32eb4542b70a3c26086f116"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "afreen-wholesale",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "tsc --noEmit && bash scripts/check-syntax.sh",
+    "compile": "tsc",
+    "test": "npm run compile && node tests/unit/catalog.test.mjs && node tests/unit/quote.test.mjs",
+    "build": "npm run compile && node scripts/build.mjs",
+    "test:site": "node tests/site/site.test.mjs && node tests/site/server.test.mjs",
+    "test:e2e": "playwright test",
+    "dev": "npm run build && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "typescript": "5.9.3"
+  }
+}

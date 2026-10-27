@@ -1,0 +1,332 @@
+{
+  "passed": false,
+  "pageViewportChecks": 18,
+  "results": [
+    {
+      "width": 1440,
+      "route": "/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[aria-label=\"English\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[lang=\"es-CL\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 26,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "route": "/es/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"Español\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 26,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "route": "/catalogue/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[aria-label=\"English\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[lang=\"es-CL\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 29,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "route": "/es/catalogo/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[lang=\"en\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"Español\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 29,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "route": "/contact/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[aria-label=\"English\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[lang=\"es-CL\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 34,
+      "incomplete": 2
+    },
+    {
+      "width": 1440,
+      "route": "/es/contacto/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[lang=\"en\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[aria-label=\"Español\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 34,
+      "incomplete": 2
+    },
+    {
+      "width": 1440,
+      "route": "/products/walnut/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[href$=\"walnut/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[href$=\"nueces/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "button[data-add=\"walnut\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 26,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "route": "/faq/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[aria-label=\"English\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[href$=\"preguntas-frecuentes/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 25,
+      "incomplete": 1
+    },
+    {
+      "width": 1440,
+      "route": "/privacy/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "a[aria-label=\"English\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "target": [
+                "a[href$=\"privacidad/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 23,
+      "incomplete": 1
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0
+    },
+    {
+      "width": 390,
+      "route": "/es/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0
+    },
+    {
+      "width": 390,
+      "route": "/catalogue/",
+      "violations": [],
+      "passes": 28,
+      "incomplete": 0
+    },
+    {
+      "width": 390,
+      "route": "/es/catalogo/",
+      "violations": [],
+      "passes": 28,
+      "incomplete": 0
+    },
+    {
+      "width": 390,
+      "route": "/contact/",
+      "violations": [],
+      "passes": 32,
+      "incomplete": 1
+    },
+    {
+      "width": 390,
+      "route": "/es/contacto/",
+      "violations": [],
+      "passes": 32,
+      "incomplete": 1
+    },
+    {
+      "width": 390,
+      "route": "/products/walnut/",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "description": "Ensure that elements labelled through their content must have their visible text as part of their accessible name",
+          "nodes": [
+            {
+              "target": [
+                "button[data-add=\"walnut\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "passes": 25,
+      "incomplete": 0
+    },
+    {
+      "width": 390,
+      "route": "/faq/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0
+    },
+    {
+      "width": 390,
+      "route": "/privacy/",
+      "violations": [],
+      "passes": 24,
+      "incomplete": 0
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "passed": false,
+  "failures": [
+    "Encoded path redirects outside preview origin",
+    "Shared validator accepted malformed email: x<@example.org",
+    "Shared validator accepted malformed email: buyer@example..org",
+    "Shared validator accepted malformed email: buyer@-example.org",
+    "Browser prepared summary for malformed email: x<@example.org",
+    "Browser prepared summary for malformed email: buyer@example..org",
+    "Browser prepared summary for malformed email: buyer@-example.org",
+    "company boundary contrast 2.12 is below 3:1",
+    "email boundary contrast 2.12 is below 3:1",
+    "message boundary contrast 2.12 is below 3:1",
+    "quantity-walnut boundary contrast 2.12 is below 3:1",
+    "unit-walnut boundary contrast 2.12 is below 3:1",
+    "Home target 26.69x44.00 is below 44x44",
+    "Privacy target 32.80x44.00 is below 44x44"
+  ],
+  "evidence": {
+    "redirect": {
+      "status": 308,
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'",
+        "Location": "//example.com/../es/"
+      }
+    },
+    "emailValidation": [
+      {
+        "email": "x<@example.org",
+        "rejected": false
+      },
+      {
+        "email": "buyer@example..org",
+        "rejected": false
+      },
+      {
+        "email": "buyer@-example.org",
+        "rejected": false
+      }
+    ],
+    "browserEmailValidation": [
+      {
+        "email": "x<@example.org",
+        "invalid": false,
+        "nativeMismatch": true,
+        "prepared": true
+      },
+      {
+        "email": "buyer@example..org",
+        "invalid": false,
+        "nativeMismatch": true,
+        "prepared": true
+      },
+      {
+        "email": "buyer@-example.org",
+        "invalid": false,
+        "nativeMismatch": true,
+        "prepared": true
+      }
+    ],
+    "boundaries": [
+      {
+        "id": "company",
+        "border": "rgb(162, 174, 156)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 2.120956278759962
+      },
+      {
+        "id": "email",
+        "border": "rgb(162, 174, 156)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 2.120956278759962
+      },
+      {
+        "id": "message",
+        "border": "rgb(162, 174, 156)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 2.120956278759962
+      },
+      {
+        "id": "quantity-walnut",
+        "border": "rgb(162, 174, 156)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 2.120956278759962
+      },
+      {
+        "id": "unit-walnut",
+        "border": "rgb(162, 174, 156)",
+        "fill": "rgb(254, 253, 248)",
+        "background": "rgb(247, 245, 237)",
+        "contrast": 2.120956278759962
+      }
+    ],
+    "touchTargets": [
+      {
+        "text": "Home",
+        "width": 26.6875,
+        "height": 44
+      },
+      {
+        "text": "Privacy",
+        "width": 32.796875,
+        "height": 44
+      }
+    ]
+  }
+}

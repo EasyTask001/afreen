@@ -1,0 +1,487 @@
+{
+  "passed": true,
+  "auditedRoutes": 40,
+  "issues": [],
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Afreen | Wholesale fresh produce & dry fruits in Chile",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Good produce.Better possibilities."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/catalogue/",
+      "status": 200,
+      "title": "Wholesale catalogue for retailers in Chile | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "An assortment of possibilities."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/catalogue/dry-fruits/",
+      "status": 200,
+      "title": "Wholesale dry fruits & nuts: walnuts, raisins, almonds | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Dry fruits & nuts"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/catalogue/fresh-produce/",
+      "status": 200,
+      "title": "Wholesale fresh produce for retailers in Chile | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Fresh produce"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "title": "About Afreen | A wholesale catalogue for Chilean retailers",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Your nextassortmentstarts here."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "title": "Prepare a wholesale quote request | Afreen local demo",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Let’s start with your selection."
+      ],
+      "forms": 1
+    },
+    {
+      "route": "/faq/",
+      "status": 200,
+      "title": "Wholesale catalogue & quote questions answered | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Clear questions.Useful answers."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/privacy/",
+      "status": 200,
+      "title": "Privacy & local quote data | Afreen catalogue demo",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Privacy in this demo."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/walnut/",
+      "status": 200,
+      "title": "Wholesale walnut for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Walnut"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/raisins/",
+      "status": 200,
+      "title": "Wholesale raisins for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Raisins"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/almonds/",
+      "status": 200,
+      "title": "Wholesale almonds for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Almonds"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/orange/",
+      "status": 200,
+      "title": "Wholesale orange for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Orange"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/apple/",
+      "status": 200,
+      "title": "Wholesale apple for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Apple"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/mandarin/",
+      "status": 200,
+      "title": "Wholesale mandarin for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Mandarin"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/grapes/",
+      "status": 200,
+      "title": "Wholesale grapes for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Grapes"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/grapefruit/",
+      "status": 200,
+      "title": "Wholesale grapefruit for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Grapefruit"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/avocado/",
+      "status": 200,
+      "title": "Wholesale avocado for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Avocado"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/lemon/",
+      "status": 200,
+      "title": "Wholesale lemon for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Lemon"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/beetroot/",
+      "status": 200,
+      "title": "Wholesale beetroot for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Beetroot"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/products/cherry/",
+      "status": 200,
+      "title": "Wholesale cherry for retailers | Afreen",
+      "lang": "en",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Cherry"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/",
+      "status": 200,
+      "title": "Afreen | Frutas y frutos secos al por mayor en Chile",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Buenos productos.Más posibilidades."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/catalogo/",
+      "status": 200,
+      "title": "Catálogo mayorista para comerciantes en Chile | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Un surtido con posibilidades."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/catalogo/frutos-secos/",
+      "status": 200,
+      "title": "Frutos secos al por mayor: nueces, pasas y almendras | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Frutos secos"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/catalogo/frutas-y-verduras/",
+      "status": 200,
+      "title": "Frutas y verduras al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Frutas y verduras"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/nosotros/",
+      "status": 200,
+      "title": "Sobre Afreen | Catálogo mayorista para comercios en Chile",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "El próximo surtidode tu negocioempieza aquí."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/contacto/",
+      "status": 200,
+      "title": "Prepara una solicitud de cotización mayorista | Afreen demo",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Empecemos por tu selección."
+      ],
+      "forms": 1
+    },
+    {
+      "route": "/es/preguntas-frecuentes/",
+      "status": 200,
+      "title": "Preguntas sobre catálogo y cotizaciones mayoristas | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Preguntas claras.Respuestas útiles."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/privacidad/",
+      "status": 200,
+      "title": "Privacidad y datos de la cotización local | Afreen demo",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Privacidad en esta demo."
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/nueces/",
+      "status": 200,
+      "title": "Nueces al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Nueces"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/pasas/",
+      "status": 200,
+      "title": "Pasas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Pasas"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/almendras/",
+      "status": 200,
+      "title": "Almendras al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Almendras"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/naranjas/",
+      "status": 200,
+      "title": "Naranjas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Naranjas"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/manzanas/",
+      "status": 200,
+      "title": "Manzanas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Manzanas"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/mandarinas/",
+      "status": 200,
+      "title": "Mandarinas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Mandarinas"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/uvas/",
+      "status": 200,
+      "title": "Uvas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Uvas"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/pomelos/",
+      "status": 200,
+      "title": "Pomelos al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Pomelos"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/paltas/",
+      "status": 200,
+      "title": "Paltas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Paltas"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/limones/",
+      "status": 200,
+      "title": "Limones al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Limones"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/betarragas/",
+      "status": 200,
+      "title": "Betarragas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Betarragas"
+      ],
+      "forms": 0
+    },
+    {
+      "route": "/es/productos/cerezas/",
+      "status": 200,
+      "title": "Cerezas al por mayor para comercios | Afreen",
+      "lang": "es-CL",
+      "overflow": false,
+      "missingImages": [],
+      "h1": [
+        "Cerezas"
+      ],
+      "forms": 0
+    }
+  ]
+}

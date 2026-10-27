@@ -1,0 +1,304 @@
+{
+  "passed": true,
+  "pageViewportChecks": 18,
+  "results": [
+    {
+      "width": 1440,
+      "route": "/",
+      "violations": [],
+      "passes": 26,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/es/",
+      "violations": [],
+      "passes": 26,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/catalogue/",
+      "violations": [],
+      "passes": 29,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/es/catalogo/",
+      "violations": [],
+      "passes": 29,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/contact/",
+      "violations": [],
+      "passes": 34,
+      "incomplete": 2,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "nodes": [
+            {
+              "target": [
+                ".remove-product"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/es/contacto/",
+      "violations": [],
+      "passes": 34,
+      "incomplete": 2,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "nodes": [
+            {
+              "target": [
+                ".remove-product"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/products/walnut/",
+      "violations": [],
+      "passes": 26,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/faq/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/privacy/",
+      "violations": [],
+      "passes": 23,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": [
+            {
+              "target": [
+                ".language-switch"
+              ],
+              "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on \"div\" elements with no valid role attribute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0,
+      "incompleteDetails": []
+    },
+    {
+      "width": 390,
+      "route": "/es/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0,
+      "incompleteDetails": []
+    },
+    {
+      "width": 390,
+      "route": "/catalogue/",
+      "violations": [],
+      "passes": 28,
+      "incomplete": 0,
+      "incompleteDetails": []
+    },
+    {
+      "width": 390,
+      "route": "/es/catalogo/",
+      "violations": [],
+      "passes": 28,
+      "incomplete": 0,
+      "incompleteDetails": []
+    },
+    {
+      "width": 390,
+      "route": "/contact/",
+      "violations": [],
+      "passes": 32,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "label-content-name-mismatch",
+          "nodes": [
+            {
+              "target": [
+                ".remove-product"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/es/contacto/",
+      "violations": [],
+      "passes": 32,
+      "incomplete": 1,
+      "incompleteDetails": [
+        {
+          "id": "label-content-name-mismatch",
+          "nodes": [
+            {
+              "target": [
+                ".remove-product"
+              ],
+              "failureSummary": "Fix any of the following:\n  Unable to determine if the visible text is part of the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/products/walnut/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0,
+      "incompleteDetails": []
+    },
+    {
+      "width": 390,
+      "route": "/faq/",
+      "violations": [],
+      "passes": 25,
+      "incomplete": 0,
+      "incompleteDetails": []
+    },
+    {
+      "width": 390,
+      "route": "/privacy/",
+      "violations": [],
+      "passes": 24,
+      "incomplete": 0,
+      "incompleteDetails": []
+    }
+  ]
+}
