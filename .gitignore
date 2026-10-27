@@ -23,9 +23,6 @@ dist/
 *.pid.lock
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Preserve required verification evidence
-!/artifacts/**/*.log
-
 # Disposable test output and browser files; retain audit scripts and reports
 /coverage/
 /.nyc_output/
@@ -54,6 +51,8 @@ Desktop.ini
 *.swp
 *.swo
 *~
+.idea/
+.vscode/
 
 # Local coding-worker instructions and tool state (not application source)
 /.codex-*.md
@@ -88,3 +87,9 @@ Desktop.ini
 /artifacts/qa/*
 !/artifacts/qa/package.json
 !/artifacts/qa/package-lock.json
+
+# Preserve verification evidence logs. Must appear AFTER /artifacts/*: git applies
+# the last matching pattern, so a negation placed earlier is silently overridden.
+# Logs under fully excluded directories (tmp/, playwright-report/, ...) cannot be
+# re-included by design and remain disposable.
+!/artifacts/**/*.log

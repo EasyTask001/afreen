@@ -1,0 +1,5 @@
+
+> afreen-wholesale@1.0.0 check
+> tsc --noEmit && bash scripts/check-syntax.sh
+
+Syntax checked 15 JavaScript modules.

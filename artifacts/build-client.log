@@ -1,0 +1,9 @@
+
+> afreen-wholesale@1.0.0 build
+> npm run compile && node scripts/build.mjs
+
+
+> afreen-wholesale@1.0.0 compile
+> tsc
+
+Built 42 localized static pages, 40 indexable canonical routes, sitemap and robots.txt.

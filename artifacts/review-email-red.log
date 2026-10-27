@@ -1,0 +1,149 @@
+
+> afreen-wholesale@1.0.0 test
+> npm run compile && node tests/unit/catalog.test.mjs && node tests/unit/quote.test.mjs
+
+
+> afreen-wholesale@1.0.0 compile
+> tsc
+
+TAP version 13
+# Subtest: the retailer catalogue contains all twelve requested products in the right categories
+ok 1 - the retailer catalogue contains all twelve requested products in the right categories
+  ---
+  duration_ms: 0.908131
+  type: 'test'
+  ...
+# Subtest: Spanish search understands accents, bilingual product names, categories and empty results
+ok 2 - Spanish search understands accents, bilingual product names, categories and empty results
+  ---
+  duration_ms: 0.864515
+  type: 'test'
+  ...
+# Subtest: language switches keep every page equivalent, including product pages and 404
+ok 3 - language switches keep every page equivalent, including product pages and 404
+  ---
+  duration_ms: 2.318137
+  type: 'test'
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 3
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9.402652
+TAP version 13
+# Subtest: malformed retailer email is rejected: x<@example.org
+not ok 1 - malformed retailer email is rejected: x<@example.org
+  ---
+  duration_ms: 1.053672
+  type: 'test'
+  location: '/home/hsthind/Documents/afreen/tests/unit/quote.test.mjs:8:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/hsthind/Documents/afreen/tests/unit/quote.test.mjs:9:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: malformed retailer email is rejected: buyer@example..org
+not ok 2 - malformed retailer email is rejected: buyer@example..org
+  ---
+  duration_ms: 0.683969
+  type: 'test'
+  location: '/home/hsthind/Documents/afreen/tests/unit/quote.test.mjs:8:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/hsthind/Documents/afreen/tests/unit/quote.test.mjs:9:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: malformed retailer email is rejected: buyer@-example.org
+not ok 3 - malformed retailer email is rejected: buyer@-example.org
+  ---
+  duration_ms: 0.161808
+  type: 'test'
+  location: '/home/hsthind/Documents/afreen/tests/unit/quote.test.mjs:8:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + undefined
+    - true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///home/hsthind/Documents/afreen/tests/unit/quote.test.mjs:9:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: retailer emails support plus tags, subdomains and apostrophes
+ok 4 - retailer emails support plus tags, subdomains and apostrophes
+  ---
+  duration_ms: 0.691176
+  type: 'test'
+  ...
+# Subtest: a usable enquiry requires contact details, selected products, positive quantities and consent
+ok 5 - a usable enquiry requires contact details, selected products, positive quantities and consent
+  ---
+  duration_ms: 0.293928
+  type: 'test'
+  ...
+# Subtest: only known unique product IDs survive storage, including corrupt or malicious storage
+ok 6 - only known unique product IDs survive storage, including corrupt or malicious storage
+  ---
+  duration_ms: 0.217132
+  type: 'test'
+  ...
+# Subtest: downloaded and copied summaries contain actual line items and honest local-only outcomes in both languages
+ok 7 - downloaded and copied summaries contain actual line items and honest local-only outcomes in both languages
+  ---
+  duration_ms: 0.413025
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 4
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9.692599

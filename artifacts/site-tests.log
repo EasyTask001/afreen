@@ -1,0 +1,38 @@
+
+> afreen-wholesale@1.0.0 test:site
+> node tests/site/site.test.mjs
+
+TAP version 13
+# Subtest: all bilingual pages are rendered with unique localized metadata and reciprocal equivalent URLs
+ok 1 - all bilingual pages are rendered with unique localized metadata and reciprocal equivalent URLs
+  ---
+  duration_ms: 5.45476
+  type: 'test'
+  ...
+# Subtest: structured data contains only supported business and product facts and valid breadcrumb paths
+ok 2 - structured data contains only supported business and product facts and valid breadcrumb paths
+  ---
+  duration_ms: 2.210132
+  type: 'test'
+  ...
+# Subtest: every internal destination, script, stylesheet and image exists and all image dimensions are explicit
+ok 3 - every internal destination, script, stylesheet and image exists and all image dimensions are explicit
+  ---
+  duration_ms: 6.195916
+  type: 'test'
+  ...
+# Subtest: sitemap lists every indexable canonical once and omits both error pages
+ok 4 - sitemap lists every indexable canonical once and omits both error pages
+  ---
+  duration_ms: 0.292506
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 19.058851

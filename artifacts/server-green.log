@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: preview serves real static pages, scripts and media with appropriate content types
+ok 1 - preview serves real static pages, scripts and media with appropriate content types
+  ---
+  duration_ms: 4.390832
+  type: 'test'
+  ...
+# Subtest: preview returns genuine localized 404 status, rejects writes and confines requests to dist
+ok 2 - preview returns genuine localized 404 status, rejects writes and confines requests to dist
+  ---
+  duration_ms: 2.380509
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9.475356

@@ -1,0 +1,37 @@
+
+> afreen-wholesale@1.0.0 test:e2e
+> playwright test
+
+
+Running 28 tests using 2 workers
+
+  ✓   1 [desktop] › tests/e2e/site.spec.mjs:40:1 › English is default regardless of locale; language links keep exact product equivalents (534ms)
+  ✓   2 [mobile] › tests/e2e/site.spec.mjs:40:1 › English is default regardless of locale; language links keep exact product equivalents (769ms)
+  ✓   3 [desktop] › tests/e2e/site.spec.mjs:59:1 › catalogue filters, bilingual accent-insensitive search, empty state and product links work (594ms)
+  ✓   5 [desktop] › tests/e2e/site.spec.mjs:83:1 › card and detail selection persists only IDs, supports removal and carries into the enquiry (498ms)
+  ✓   4 [mobile] › tests/e2e/site.spec.mjs:59:1 › catalogue filters, bilingual accent-insensitive search, empty state and product links work (1.1s)
+  ✓   6 [desktop] › tests/e2e/site.spec.mjs:106:3 › en detail quote button accessible name includes its visible label before and after toggling (300ms)
+  ✓   8 [desktop] › tests/e2e/site.spec.mjs:106:3 › es detail quote button accessible name includes its visible label before and after toggling (286ms)
+  ✓   7 [mobile] › tests/e2e/site.spec.mjs:83:1 › card and detail selection persists only IDs, supports removal and carries into the enquiry (484ms)
+  ✓  10 [mobile] › tests/e2e/site.spec.mjs:106:3 › en detail quote button accessible name includes its visible label before and after toggling (276ms)
+  ✓  11 [mobile] › tests/e2e/site.spec.mjs:106:3 › es detail quote button accessible name includes its visible label before and after toggling (257ms)
+  ✓   9 [desktop] › tests/e2e/site.spec.mjs:121:1 › quote validation, safe preview, copy, download and simulated demo contact have honest outcomes (4.2s)
+  ✓  12 [mobile] › tests/e2e/site.spec.mjs:121:1 › quote validation, safe preview, copy, download and simulated demo contact have honest outcomes (6.3s)
+  ✓  13 [desktop] › tests/e2e/site.spec.mjs:171:1 › Spanish quote flow is translated through validation and generated output (4.3s)
+  ✓  14 [mobile] › tests/e2e/site.spec.mjs:171:1 › Spanish quote flow is translated through validation and generated output (4.2s)
+  ✓  15 [desktop] › tests/e2e/site.spec.mjs:192:3 › en email validation rejects malformed addresses and accepts retailer addresses (4.3s)
+  ✓  16 [mobile] › tests/e2e/site.spec.mjs:192:3 › en email validation rejects malformed addresses and accepts retailer addresses (5.8s)
+  ✓  17 [desktop] › tests/e2e/site.spec.mjs:192:3 › es email validation rejects malformed addresses and accepts retailer addresses (4.9s)
+  ✓  19 [desktop] › tests/e2e/site.spec.mjs:229:1 › enquiry field boundaries have at least 3:1 contrast against actual surrounding colors (216ms)
+  ✓  20 [desktop] › tests/e2e/site.spec.mjs:270:1 › standalone breadcrumb and footer links meet 44 by 44 at 390 by 844 (242ms)
+  ✓  21 [desktop] › tests/e2e/site.spec.mjs:287:1 › keyboard focus, responsive menu, reduced motion and local 404 work (507ms)
+  ✓  22 [desktop] › tests/e2e/site.spec.mjs:318:1 › catalogue and meaningful details are usable without JavaScript (250ms)
+  ✓  23 [desktop] › tests/e2e/site.spec.mjs:329:1 › all forty indexable routes load without broken images, overflow or runtime errors (2.9s)
+  ✓  18 [mobile] › tests/e2e/site.spec.mjs:192:3 › es email validation rejects malformed addresses and accepts retailer addresses (5.7s)
+  ✓  24 [mobile] › tests/e2e/site.spec.mjs:229:1 › enquiry field boundaries have at least 3:1 contrast against actual surrounding colors (247ms)
+  ✓  25 [mobile] › tests/e2e/site.spec.mjs:270:1 › standalone breadcrumb and footer links meet 44 by 44 at 390 by 844 (325ms)
+  ✓  26 [mobile] › tests/e2e/site.spec.mjs:287:1 › keyboard focus, responsive menu, reduced motion and local 404 work (1.3s)
+  ✓  27 [mobile] › tests/e2e/site.spec.mjs:318:1 › catalogue and meaningful details are usable without JavaScript (319ms)
+  ✓  28 [mobile] › tests/e2e/site.spec.mjs:329:1 › all forty indexable routes load without broken images, overflow or runtime errors (5.7s)
+
+  28 passed (33.4s)

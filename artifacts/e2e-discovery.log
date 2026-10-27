@@ -1,0 +1,22 @@
+
+> afreen-wholesale@1.0.0 test:e2e
+> playwright test --list
+
+Listing tests:
+  [desktop] › site.spec.mjs:28:1 › English is default regardless of locale; language links keep exact product equivalents
+  [desktop] › site.spec.mjs:47:1 › catalogue filters, bilingual accent-insensitive search, empty state and product links work
+  [desktop] › site.spec.mjs:71:1 › card and detail selection persists only IDs, supports removal and carries into the enquiry
+  [desktop] › site.spec.mjs:90:1 › quote validation, safe preview, copy, download and simulated demo contact have honest outcomes
+  [desktop] › site.spec.mjs:140:1 › Spanish quote flow is translated through validation and generated output
+  [desktop] › site.spec.mjs:160:1 › keyboard focus, responsive menu, reduced motion and local 404 work
+  [desktop] › site.spec.mjs:189:1 › catalogue and meaningful details are usable without JavaScript
+  [desktop] › site.spec.mjs:200:1 › all forty indexable routes load without broken images, overflow or runtime errors
+  [mobile] › site.spec.mjs:28:1 › English is default regardless of locale; language links keep exact product equivalents
+  [mobile] › site.spec.mjs:47:1 › catalogue filters, bilingual accent-insensitive search, empty state and product links work
+  [mobile] › site.spec.mjs:71:1 › card and detail selection persists only IDs, supports removal and carries into the enquiry
+  [mobile] › site.spec.mjs:90:1 › quote validation, safe preview, copy, download and simulated demo contact have honest outcomes
+  [mobile] › site.spec.mjs:140:1 › Spanish quote flow is translated through validation and generated output
+  [mobile] › site.spec.mjs:160:1 › keyboard focus, responsive menu, reduced motion and local 404 work
+  [mobile] › site.spec.mjs:189:1 › catalogue and meaningful details are usable without JavaScript
+  [mobile] › site.spec.mjs:200:1 › all forty indexable routes load without broken images, overflow or runtime errors
+Total: 16 tests in 1 file
