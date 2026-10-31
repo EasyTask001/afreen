@@ -42,3 +42,36 @@ test('language switches keep every page equivalent, including product pages and 
     assert.equal(equivalentPath(equivalentPath(route.path, other), route.lang), route.path);
   }
 });
+
+test('almond and walnut copy carries trade detail grounded in the supplied references', () => {
+  const walnut = products.find(p => p.id === 'walnut');
+  const almonds = products.find(p => p.id === 'almonds');
+  for (const p of [walnut, almonds]) {
+    for (const lang of ['en', 'es']) {
+      assert.ok(Array.isArray(p[lang].specs) && p[lang].specs.length >= 5, `${p.id}: ${lang} specs`);
+      for (const spec of p[lang].specs) {
+        assert.ok(spec.label.length > 0 && spec.value.length > 0, `${p.id}: ${lang} spec complete`);
+      }
+    }
+  }
+  const walnutEn = walnut.en.specs.map(s => `${s.label}: ${s.value}`).join(' | ');
+  assert.match(walnutEn, /Juglans regia/);
+  assert.match(walnutEn, /Serr and Chandler/);
+  assert.match(walnutEn, /light amber/);
+  assert.match(walnutEn, /90% halves, quarters, pieces/);
+  const almondEn = almonds.en.specs.map(s => `${s.label}: ${s.value}`).join(' | ');
+  assert.match(almondEn, /Non Pareil, Carmel/);
+  assert.match(almondEn, /18\/20/);
+  assert.match(almondEn, /34\/40, 40\+/);
+  assert.match(almondEn, /sliced, roasted, salted/);
+  // Products outside the referenced range keep their existing copy model.
+  assert.equal(products.find(p => p.id === 'raisins').en.specs, undefined);
+});
+
+test('catalogue search finds walnut and almond trade terms in either language', () => {
+  assert.deepEqual(searchProducts('chandler', 'all').map(p => p.id), ['walnut']);
+  assert.deepEqual(searchProducts('Non Pareil', 'dry').map(p => p.id), ['almonds']);
+  assert.deepEqual(searchProducts('laminadas', 'all').map(p => p.id), ['almonds']);
+  assert.deepEqual(searchProducts('partidas a mano', 'all').map(p => p.id), ['walnut']);
+  assert.equal(searchProducts('dragonfruit', 'all').length, 0);
+});

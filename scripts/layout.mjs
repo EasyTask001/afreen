@@ -6,10 +6,17 @@ export function layout({ key, lang, title, description, body, crumbs = [], produ
   const es = lang === 'es';
   const path = pathFor(key, lang), canonical = contact.site + path;
   const image = `${contact.site}/images/${product?.id ?? 'hero'}.webp`;
-  const org = { '@context': 'https://schema.org', '@type': 'Organization', '@id': `${contact.site}/#organization`, name: 'Afreen', url: contact.site,
+  const afreenId = `${contact.site}/#organization`;
+  const studioId = 'https://www.easytask.ca/#organization';
+  const websiteId = `${contact.site}/#website`;
+  const org = { '@context': 'https://schema.org', '@type': 'Organization', '@id': afreenId, name: 'Afreen', url: contact.site,
     description: es ? 'Frutas, verduras y frutos secos al por mayor para comerciantes en Chile.' : 'Wholesale fresh produce and dry fruits for retailers in Chile.',
     address: { '@type': 'PostalAddress', streetAddress: contact.address, addressLocality: contact.locality, addressCountry: 'CL' } };
-  const schemas = [org];
+  const studio = { '@context': 'https://schema.org', '@type': 'Organization', '@id': studioId, name: 'EasyTask AI Corp.', url: 'https://www.easytask.ca/' };
+  const website = { '@context': 'https://schema.org', '@type': 'WebSite', '@id': websiteId, url: `${contact.site}/`, name: 'Afreen', publisher: { '@id': afreenId } };
+  const webpage = { '@context': 'https://schema.org', '@type': 'WebPage', '@id': `${canonical}#webpage`, url: canonical, name: title, description,
+    inLanguage: es ? 'es-CL' : 'en', isPartOf: { '@id': websiteId }, creator: { '@id': studioId } };
+  const schemas = [org, studio, website, webpage];
   if (crumbs.length && key !== '404') schemas.push({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: contact.site + c.path })) });
   if (product) schemas.push({ '@context': 'https://schema.org', '@type': 'Product', name: product[lang].name, description: product[lang].description, category: es ? (product.category === 'dry' ? 'Frutos secos' : 'Frutas y verduras') : (product.category === 'dry' ? 'Dry fruits & nuts' : 'Fresh produce'), image, url: canonical });
   const nav = [ ['catalogue', es ? 'Catálogo' : 'Catalogue'], ['about', es ? 'Nosotros' : 'Our story'], ['faq', es ? 'Preguntas frecuentes' : 'FAQ'] ];

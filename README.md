@@ -1,6 +1,8 @@
 # Afreen wholesale catalogue
 
-A bilingual, prerendered wholesale catalogue for retailers in Chile. English is the default at `/`; Chilean Spanish lives under `/es/`. All 12 products have substantive detail pages, with equivalent language switching. The quote workflow is a **local demo**: it validates a selection and creates a usable copyable/downloadable request. It never sends email, opens WhatsApp or claims delivery.
+A bilingual, prerendered wholesale catalogue for retailers in Chile. English is the default at `/`; Chilean Spanish lives under `/es/`. All 12 products have substantive detail pages, with equivalent language switching and structured product specs — botanical names, varieties, kernel grades or cuts and composition — rendered when present. The quote workflow is a **local demo**: it validates a selection and creates a usable copyable/downloadable request. It never sends email, opens WhatsApp or claims delivery.
+
+The footer credits **EasyTask AI Corp.** (`https://www.easytask.ca/`) as a centred technology partner, using the EasyTask logo (`public/easytask-logo.png`), while retaining the AI-imagery disclosure. The home page opens with a credential band covering the two product families, the wholesale focus, per-inquiry details and the listed address.
 
 ## Run locally
 

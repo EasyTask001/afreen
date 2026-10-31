@@ -123,3 +123,67 @@ test('sitemap lists every indexable canonical once and omits both error pages', 
   for (const { path, key } of allRoutes()) if (key !== '404') assert.ok(urls.includes(`https://afreen.cl${path}`));
   assert.match(readFileSync(join(root, 'robots.txt'), 'utf8'), /Sitemap: https:\/\/afreen.cl\/sitemap.xml/);
 });
+
+test('AI imagery disclaimer remains on every rendered page in both languages', () => {
+  const disclaimer = {
+    en: 'AI-generated illustrative imagery; not evidence of actual facilities or stock.',
+    es: 'Imágenes ilustrativas generadas con IA; no acreditan instalaciones ni stock real.',
+  };
+  for (const { lang, path } of allRoutes()) {
+    const html = htmlAt(path);
+    assert.equal(html.includes(disclaimer[lang]), true, `${path}: ${lang} disclaimer present`);
+    assert.equal(html.includes(disclaimer[lang === 'es' ? 'en' : 'es']), false, `${path}: other-language disclaimer absent`);
+  }
+});
+
+test('every page credits EasyTask AI Corp. in the footer with a crawlable link and matching entity data', () => {
+  for (const { key, lang, path } of allRoutes()) {
+    const html = htmlAt(path);
+    assert.ok(html.indexOf('class="footer-partner') > html.indexOf('class="site-footer"'), `${path}: credit inside the footer`);
+    const partner = html.match(/<div class="footer-partner[^"]*">([\s\S]*?)<\/div>/)?.[1];
+    assert.ok(partner, `${path}: footer partner block`);
+    assert.ok(partner.includes(lang === 'es' ? 'SOCIO TECNOLÓGICO' : 'TECH PARTNER'), `${path}: localized partner label`);
+    assert.ok(partner.includes('EasyTask AI Corp.'), `${path}: partner name`);
+    const [, attrs, inner] = partner.match(/<a\b([^>]*)>([\s\S]*?)<\/a>/) ?? [];
+    assert.ok(attrs, `${path}: logo anchor`);
+    assert.ok(attrs.includes('href="https://www.easytask.ca/"'), `${path}: studio URL`);
+    assert.ok(attrs.includes('rel="noopener noreferrer"'), `${path}: safe external link`);
+    assert.equal(/\brel="[^"]*(?:nofollow|sponsored|ugc)/.test(attrs), false, `${path}: editorial credit stays crawlable`);
+    assert.equal(/target="_blank"/.test(attrs), false, `${path}: credit does not hijack navigation`);
+    assert.ok(inner.includes('alt="EasyTask AI Corp. logo"'), `${path}: branded logo alt text`);
+    assert.ok(inner.includes('src="/easytask-logo.png"'), `${path}: logo asset`);
+
+    const schemas = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m => JSON.parse(m[1]));
+    const studio = schemas.find(schema => schema['@id'] === 'https://www.easytask.ca/#organization');
+    assert.ok(studio, `${path}: studio entity`);
+    assert.equal(studio['@type'], 'Organization');
+    assert.equal(studio.name, 'EasyTask AI Corp.');
+    assert.equal(studio.url, 'https://www.easytask.ca/');
+    const webpage = schemas.find(schema => schema['@type'] === 'WebPage');
+    assert.equal(webpage['@id'], `https://afreen.cl${path}#webpage`, `${path}: page entity`);
+    assert.equal(webpage.url, `https://afreen.cl${path}`);
+    assert.deepEqual(webpage.creator, { '@id': 'https://www.easytask.ca/#organization' }, `${path}: studio credited as creator`);
+    const website = schemas.find(schema => schema['@type'] === 'WebSite');
+    assert.equal(website['@id'], 'https://afreen.cl/#website');
+    assert.deepEqual(website.publisher, { '@id': 'https://afreen.cl/#organization' }, `${path}: Afreen remains publisher`);
+    assert.equal(studio.parentOrganization, undefined, 'No ownership claim between the two organizations');
+  }
+});
+
+test('almond and walnut detail pages render their trade specification lists in both languages', () => {
+  const cases = [
+    ['/products/walnut/', ['Product details', 'Juglans regia', 'Serr and Chandler', '90% halves, quarters, pieces', 'light amber']],
+    ['/es/productos/nueces/', ['Detalles del producto', 'Juglans regia', 'Serr y Chandler', '90% mitades, cuartos, trozos', 'light amber']],
+    ['/products/almonds/', ['Product details', 'Prunus dulcis', 'Non Pareil, Carmel', '34/40, 40+', 'sliced, roasted, salted']],
+    ['/es/productos/almendras/', ['Detalles del producto', 'Prunus dulcis', 'Non Pareil, Carmel', '34/40, 40+', 'laminadas, tostadas, saladas']],
+  ];
+  for (const [path, expected] of cases) {
+    const html = htmlAt(path);
+    const block = html.match(/<dl class="detail-specs"[^>]*>.*?<\/dl>/s)?.[0];
+    assert.ok(block, `${path}: spec list rendered`);
+    assert.equal((block.match(/<dt>/g) ?? []).length, (block.match(/<dd>/g) ?? []).length, `${path}: paired terms`);
+    for (const text of expected) assert.ok(block.includes(text), `${path}: contains ${text}`);
+  }
+  const raisins = htmlAt('/products/raisins/');
+  assert.equal(raisins.includes('detail-specs'), false, 'raisins: no spec list');
+});

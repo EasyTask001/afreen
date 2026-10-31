@@ -125,3 +125,44 @@ Verification:
 - `git diff --check -- .gitignore`: exit 0. The repository currently has no tracked files, so this command cannot inspect the untracked file; whitespace was also checked directly below.
 
 Application tests, browser tests, builds, and network audits were not run for this ignore-only change. These results do not establish application or launch readiness.
+
+## Almond and walnut trade detail (2026-10-29)
+
+Added reference product detail for the two dry-fruit lines, using the supplied Andes Harvest almond and walnut pages as the source of variety, grade, size and preparation facts. Content stays descriptive: no stock, availability, pricing, MOQ or certification claims, and no disease-risk health claims — only composition statements, each scoped by "figures confirmed by specification".
+
+Changes:
+- `src/data/catalog.ts`: new optional `ProductSpec[]` on `ProductCopy`; walnut (EN/ES) and almonds (EN/ES) descriptions, buying guidance, handling guidance and specification lists rewritten; catalogue search now indexes spec text in both languages.
+- `scripts/catalogue.mjs`: detail page renders a `<dl class="detail-specs">` labelled "Product details" / "Detalles del producto" only when a product has specs (the other ten products are unchanged).
+- `public/styles.css`: two-column spec grid at desktop, single column at ≤600 px.
+- `tests/unit/catalog.test.mjs`, `tests/site/site.test.mjs`: data and rendered-output assertions for both products in both languages, negative assertion for raisins, and search coverage for trade terms.
+
+Verification (all from the project root):
+
+| Command | Exit | Result |
+| --- | --- | --- |
+| `npm run check` | 0 | TypeScript and 15 JS modules pass syntax check. |
+| `npm test` | 0 | 5 catalogue + 7 quote unit tests pass. |
+| `npm run build` | 0 | 42 localized pages, 40 canonical routes, sitemap and robots.txt. |
+| `npm run test:site` | 0 | 7 generated-site tests + 3 server/handler tests pass. |
+| `npm run test:e2e` | 0 | 28 Playwright tests pass (desktop + 390×844 mobile, 40 routes, no overflow/runtime errors). |
+
+Browser spot checks against `node scripts/serve.mjs` on 127.0.0.1:4321: `/catalogue/` search "chandler" → Walnut, "non pareil" → Almonds, "partidas a mano" → Walnut, "dragonfruit" → no results; `/es/catalogo/` "tostadas" and "laminadas" → Almendras, "serr" → Nueces. Spec list measured at 1440/820/390 px: no overflow, no horizontal scroll, two columns ≥850 px and one column at 390 px; `dt` colour `#59665d` on `#f7f5ed` = 5.48:1 contrast.
+
+Not done: no commit, push or deployment (not authorized); no real supplier specification sheets exist, so all grades/sizes remain "reference" formats confirmed per enquiry.
+
+## Pull, merge and push to GitHub (2026-10-31)
+
+Pulled `origin/main` (fast-forward `07cfb42` → `461191c`: pre-footer CTA redesign and centred EasyTask tech-partner credit), then re-applied the staged product-spec work on top. Two conflicts were resolved: `public/styles.css` keeps the pulled credential-band and `footer-partner` rules plus the spec grid; `scripts/layout.mjs` keeps the published `footer-partner` credit and the AI-imagery disclosure.
+
+The published footer design was adopted, so `tests/site/site.test.mjs` now asserts the `footer-partner` credit and the retained AI disclaimer instead of the superseded `footer-credit` variant. Documentation updated: `README.md` (tech partner, credential band, specs), `AGENTS.md` (spec rendering, credit invariant), `.gitignore` (local partner-asset drafts).
+
+Verification (from the project root):
+
+| Command | Exit | Result |
+| --- | --- | --- |
+| `npm run check` | 0 | TypeScript and 15 JS modules pass syntax check. |
+| `npm test` | 0 | 5 catalogue + 7 quote unit tests pass. |
+| `npm run build` | 0 | 42 localized pages, 40 canonical routes, sitemap and robots.txt. |
+| `npm run test:site` | 0 | 9 generated-site tests + 3 server/handler tests pass. |
+
+Not rerun in this session: `npm run test:e2e` and `npm audit`; no deployment occurred.

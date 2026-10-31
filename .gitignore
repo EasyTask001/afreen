@@ -43,6 +43,9 @@ __pycache__/
 *.pyo
 .venv/
 
+# EasyTask AI Corp. technology-partner: local drafts of partner branding assets are not source
+/public/easytask-logo.local.*
+
 # OS metadata and editor backup files
 .DS_Store
 ._*

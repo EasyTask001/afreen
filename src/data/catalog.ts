@@ -1,5 +1,9 @@
 export type Lang = 'en' | 'es';
 export type Category = 'dry' | 'fresh';
+export interface ProductSpec {
+  label: string;
+  value: string;
+}
 export interface ProductCopy {
   name: string;
   slug: string;
@@ -8,6 +12,7 @@ export interface ProductCopy {
   buying: string;
   handling: string;
   alt: string;
+  specs?: ProductSpec[];
 }
 export interface Product {
   id: string;
@@ -26,17 +31,33 @@ export const products: Product[] = [
     id: 'walnut', category: 'dry',
     en: {
       name: 'Walnut', slug: 'walnut', note: 'A versatile pantry essential',
-      description: 'Walnuts bring a distinctive texture and mild, earthy flavour to retail nut selections. They suit shoppers looking for an everyday pantry ingredient for baking, salads or snacking. Include walnuts in your wholesale enquiry to discuss the presentation that fits your store.',
-      buying: 'Tell us whether you need in-shell or shelled walnuts, your intended use and your estimated quantity. Ask about size, kernel colour, packing and origin. The available format and product specifications must be confirmed for your enquiry.',
-      handling: 'Keep dry nuts away from moisture, heat and direct sunlight. Confirm storage instructions and shelf life for the specific product and packaging before purchase. Walnuts are tree nuts; review allergen information before repacking.',
+      description: 'Walnuts (Juglans regia) are a tree nut with a long history in Mediterranean and Central Asian cooking. The kernel is valued for its firm, faintly bitter bite, its plant omega-3 content (alpha-linolenic acid) and its antioxidant compounds. Afreen proposes walnuts to retailers as in-shell and shelled product; the presentation and grade that suit your store are agreed in your wholesale enquiry.',
+      buying: 'Tell us whether you need in-shell or shelled walnuts, the kernel grade you can sell and your estimated quantity. Useful points to discuss are variety (Serr and Chandler are the reference in-shell varieties), kernel colour (extra light, light, light amber, amber), cut (90% halves, quarters or pieces) and whether hand-cracked product is required. Ask about packing and origin; availability is confirmed for each enquiry.',
+      handling: 'Keep dry nuts away from moisture, heat and direct sunlight. Shelled kernels absorb odours readily, so confirm that the packing suits your turnover and request storage and shelf-life guidance for the confirmed lot. Walnuts are tree nuts; review allergen information before repacking.',
       alt: 'Whole walnuts and walnut kernels on a warm stone surface',
+      specs: [
+        { label: 'Botanical name', value: 'Juglans regia — tree nut' },
+        { label: 'Reference varieties', value: 'Serr and Chandler (in-shell)' },
+        { label: 'Kernel colour grades', value: 'Extra light, light, light amber, amber' },
+        { label: 'Cuts', value: '90% halves, quarters, pieces' },
+        { label: 'Presentation', value: 'In-shell, shelled or hand-cracked' },
+        { label: 'Composition', value: 'Plant omega-3 (ALA) and antioxidant compounds; figures confirmed by specification' },
+      ],
     },
     es: {
       name: 'Nueces', slug: 'nueces', note: 'Un esencial versátil para la despensa',
-      description: 'Las nueces aportan textura y un sabor suave a la selección de frutos secos de tu negocio. Son una alternativa para clientes que buscan ingredientes para repostería, ensaladas o colaciones. Inclúyelas en tu consulta mayorista para evaluar una presentación adecuada para tu tienda.',
-      buying: 'Indica si buscas nueces con cáscara o peladas, el uso previsto y la cantidad estimada. Consulta por calibre, color de la pulpa, envase y origen. El formato disponible y las especificaciones se confirman para cada consulta.',
-      handling: 'Mantén los frutos secos alejados de la humedad, el calor y la luz directa. Confirma las instrucciones de conservación y la vida útil del producto y su envase antes de comprar. Revisa la información de alérgenos antes de reenvasar.',
+      description: 'Las nueces (Juglans regia) son un fruto seco de árbol con larga presencia en la cocina mediterránea y de Asia Central. La pulpa se valora por su textura firme y su sabor ligeramente amargo, por su aporte de omega-3 vegetal (ácido alfa-linolénico) y por sus compuestos antioxidantes. Afreen propone nueces a comercios con cáscara y peladas; la presentación y el grado adecuados para tu tienda se acuerdan en la consulta mayorista.',
+      buying: 'Indica si necesitas nueces con cáscara o peladas, el grado de pulpa que puedes vender y la cantidad estimada. Son puntos útiles la variedad (Serr y Chandler son la referencia para producto con cáscara), el color de la pulpa (extra light, light, light amber, amber), el corte (90% mitades, cuartos o trozos) y si se requiere producto partido a mano. Consulta por envase y origen; la disponibilidad se confirma en cada consulta.',
+      handling: 'Mantén los frutos secos alejados de la humedad, el calor y la luz directa. La pulpa pelada absorbe olores con facilidad, así que confirma que el envase se ajuste a tu rotación y solicita indicaciones de conservación y vida útil para el lote confirmado. Revisa la información de alérgenos antes de reenvasar.',
       alt: 'Nueces con cáscara y partidas sobre una superficie de piedra cálida',
+      specs: [
+        { label: 'Nombre botánico', value: 'Juglans regia — fruto seco de árbol' },
+        { label: 'Variedades de referencia', value: 'Serr y Chandler (con cáscara)' },
+        { label: 'Grados de color de la pulpa', value: 'Extra light, light, light amber, amber' },
+        { label: 'Cortes', value: '90% mitades, cuartos, trozos' },
+        { label: 'Presentación', value: 'Con cáscara, peladas o partidas a mano' },
+        { label: 'Composición', value: 'Omega-3 vegetal (ALA) y compuestos antioxidantes; cifras según especificación' },
+      ],
     },
   },
   {
@@ -60,17 +81,31 @@ export const products: Product[] = [
     id: 'almonds', category: 'dry',
     en: {
       name: 'Almonds', slug: 'almonds', note: 'A familiar favourite, many uses',
-      description: 'Almonds are a familiar choice for nut displays, baking ingredients and snack assortments. Their firm texture makes the format especially relevant to the end use. Use your enquiry to outline the almond presentation your retail customers need.',
-      buying: 'Let us know whether your preference is whole almonds or another presentation, and whether you require a particular treatment. Ask about size, skin, ingredients, packing and origin. Formats and quantities are subject to confirmation.',
-      handling: 'Protect almonds from humidity, strong odours and heat. Request storage and shelf-life guidance for the confirmed pack. Almonds are tree nuts; ensure allergen information remains available if the product is repacked for retail.',
+      description: 'Almonds (Prunus dulcis) are a tree nut cultivated far beyond their native range in Iran and neighbouring countries. The kernel is valued for its firm bite, its monounsaturated fat content and its contribution of fibre, protein and vitamin E. Retail demand varies by variety, kernel size and preparation, so the almond specification is worth agreeing in detail before ordering.',
+      buying: 'Let us know the variety, kernel size and preparation your customers buy. Reference varieties are Non Pareil and Carmel, with Wood Colony, Fritz, Independence and Thompson also traded. Kernel size is commonly quoted as a count per ounce (18/20, 20/22, 23/25, 25/27, 27/30, 30/34, 34/40, 40+), and preparations include shelled, sliced, roasted and salted. Ask about packing and origin; formats and quantities are confirmed for each enquiry.',
+      handling: 'Protect almonds from humidity, strong odours and heat. Sliced and roasted product is more sensitive than whole kernels, so request storage and shelf-life guidance for the confirmed preparation and pack. Almonds are tree nuts; ensure allergen information remains available if the product is repacked for retail.',
       alt: 'Whole almonds with a small bowl on a warm stone surface',
+      specs: [
+        { label: 'Botanical name', value: 'Prunus dulcis — tree nut' },
+        { label: 'Reference varieties', value: 'Non Pareil, Carmel; also Wood Colony, Fritz, Independence, Thompson' },
+        { label: 'Kernel sizing', value: 'Count per ounce: 18/20, 20/22, 23/25, 25/27, 27/30, 30/34, 34/40, 40+' },
+        { label: 'Preparations', value: 'Shelled, sliced, roasted, salted' },
+        { label: 'Composition', value: 'Monounsaturated fat, fibre, protein and vitamin E; figures confirmed by specification' },
+      ],
     },
     es: {
       name: 'Almendras', slug: 'almendras', note: 'Un clásico para distintos usos',
-      description: 'Las almendras son una opción conocida para exhibiciones de frutos secos, ingredientes de repostería y mezclas para colaciones. Su textura firme hace que la presentación sea relevante según el uso. Describe en tu consulta el formato que necesitan los clientes de tu tienda.',
-      buying: 'Cuéntanos si prefieres almendras enteras u otra presentación y si necesitas un tratamiento específico. Consulta por calibre, piel, ingredientes, envase y origen. Los formatos y las cantidades se confirman en cada consulta.',
-      handling: 'Protege las almendras de la humedad, los olores intensos y el calor. Solicita indicaciones de conservación y vida útil para el envase confirmado. Mantén disponible la información de alérgenos si reenvasas el producto para la venta.',
+      description: 'Las almendras (Prunus dulcis) son un fruto seco de árbol cultivado mucho más allá de su origen en Irán y países vecinos. La almendra se valora por su textura firme, su contenido de grasa monoinsaturada y su aporte de fibra, proteína y vitamina E. La demanda varía según variedad, calibre y preparación, por lo que conviene acordar la especificación en detalle antes de comprar.',
+      buying: 'Indica la variedad, el calibre y la preparación que compran tus clientes. Las variedades de referencia son Non Pareil y Carmel; también se comercializan Wood Colony, Fritz, Independence y Thompson. El calibre suele expresarse en granos por onza (18/20, 20/22, 23/25, 25/27, 27/30, 30/34, 34/40, 40+) y las preparaciones incluyen peladas, laminadas, tostadas y saladas. Consulta por envase y origen; formatos y cantidades se confirman en cada consulta.',
+      handling: 'Protege las almendras de la humedad, los olores intensos y el calor. El producto laminado o tostado es más sensible que la almendra entera, así que solicita indicaciones de conservación y vida útil para la preparación y el envase confirmados. Mantén disponible la información de alérgenos si reenvasas el producto para la venta.',
       alt: 'Almendras enteras junto a un pequeño recipiente sobre piedra cálida',
+      specs: [
+        { label: 'Nombre botánico', value: 'Prunus dulcis — fruto seco de árbol' },
+        { label: 'Variedades de referencia', value: 'Non Pareil, Carmel; también Wood Colony, Fritz, Independence, Thompson' },
+        { label: 'Calibre', value: 'Granos por onza: 18/20, 20/22, 23/25, 25/27, 27/30, 30/34, 34/40, 40+' },
+        { label: 'Preparaciones', value: 'Peladas, laminadas, tostadas, saladas' },
+        { label: 'Composición', value: 'Grasa monoinsaturada, fibra, proteína y vitamina E; cifras según especificación' },
+      ],
     },
   },
   {
@@ -229,8 +264,9 @@ export const products: Product[] = [
 ];
 
 const normalize = (value: string) => value.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().trim();
+const specText = (copy: ProductCopy) => (copy.specs ?? []).map(s => `${s.label} ${s.value}`).join(' ');
 export function searchProducts(query: string, category: Category | 'all'): Product[] {
   const term = normalize(query);
   return products.filter(p => (category === 'all' || p.category === category) &&
-    normalize(`${p.en.name} ${p.es.name} ${p.en.note} ${p.es.note} ${p.id === 'lemon' ? 'limón' : ''}`).includes(term));
+    normalize(`${p.en.name} ${p.es.name} ${p.en.note} ${p.es.note} ${specText(p.en)} ${specText(p.es)} ${p.id === 'lemon' ? 'limón' : ''}`).includes(term));
 }

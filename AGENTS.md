@@ -13,7 +13,7 @@ Work only in this Afreen project. Commits, pushes, deployment, spending, global 
 - E2E: install Chromium with `npx playwright install chromium`, then `npm run test:e2e`.
 - Dependency security audit: `npm audit`.
 
-This is a TypeScript catalogue and browser workflow with a native Node static renderer. Runtime has no npm dependencies. `src/data/catalog.ts` owns all product copy; `src/lib/routes.ts` owns localized URL equivalents; `scripts/` renders and serves the site; `public/` contains styles/assets. Edit source, then regenerate `dist/`. The dev command builds once and serves; it does not hot reload.
+This is a TypeScript catalogue and browser workflow with a native Node static renderer. Runtime has no npm dependencies. `src/data/catalog.ts` owns all product copy; `src/lib/routes.ts` owns localized URL equivalents; `scripts/` renders and serves the site; `public/` contains styles/assets. Product detail pages render optional structured product specs (`specs`) from catalogue copy into the `.detail-specs` list via `scripts/catalogue.mjs`. Edit source, then regenerate `dist/`. The dev command builds once and serves; it does not hot reload.
 
 ## Invariants
 
@@ -26,6 +26,7 @@ This is a TypeScript catalogue and browser workflow with a native Node static re
 - Keep meaningful static content, accessible native controls, visible keyboard focus, touch targets, responsive images and reduced-motion behavior.
 - No fabricated stock, prices, MOQ, certifications, statistics, testimonials, farm ownership or guaranteed delivery.
 - Do not overwrite original `public/images/{id}.webp` files. Generated illustrative images must remain disclosed in both languages.
+- The EasyTask AI Corp. centred technology-partner credit in the footer is content; keep it alongside the AI-imagery disclosure, and do not alter original imagery.
 
 ## Verification and launch
 
