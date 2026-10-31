@@ -31,11 +31,11 @@ npm run test:e2e
 npm audit
 ```
 
-`check` runs strict TypeScript checking and JavaScript syntax checks. Ten domain tests cover catalogue/search, localized routes, valid and malformed retailer emails, quote validation, storage filtering and summaries. Nine site/integration tests check all generated pages, accessible language labels, metadata, language alternates, schemas, links, responsive images, sitemap, and the actual static HTTP handler including error responses, path confinement and encoded-path redirect regressions.
+`check` runs strict TypeScript checking and JavaScript syntax checks. Twelve domain tests cover catalogue/search, localized routes, valid and malformed retailer emails, quote validation, storage filtering and summaries. Nine generated-site tests plus three server/handler tests check all generated pages, accessible language labels, metadata, language alternates, schemas, links, responsive images, sitemap, and the actual static HTTP handler including error responses, path confinement and encoded-path redirect regressions.
 
 The 28 Playwright cases run desktop Chromium and mobile Chromium emulating iPhone 13. They use Spanish browser locale to verify English remains the default. Tests cover language switching, categories/search/empty state, selection, validation, safe summary rendering, actual clipboard/download, Spanish outcomes, privacy, keyboard/menu/reduced motion, no-JS pages, 404s, and all 40 indexable routes. They also verify malformed-email rejection, computed field-boundary contrast, 44px standalone link targets, and bilingual detail-button accessible names in each selection state. They block external browser requests and launch a disposable **loopback-only** preview. An existing server on port 4321 must be stopped first. Chromium sandboxing is explicitly enabled; do not add bypass flags if the environment cannot support it.
 
-Reports and screenshots are configured under `artifacts/`. See the [independent final verification](artifacts/final-verification.md) for the latest executed checks, review fixes and limits. The [implementation report](artifacts/implementation-report.md) preserves worker-stage results and sandbox restrictions. Final parent verification executed all 28 E2E cases, an 18-page/viewport axe scan and a zero-vulnerability network dependency audit. **Browser tests and network audit must not be assumed passed from test discovery or offline installation.**
+Reports and screenshots are configured under `artifacts/`. See the [independent final verification](artifacts/final-verification.md) for the delivery-time executed checks, review fixes and limits. The [implementation report](artifacts/implementation-report.md) preserves worker-stage results and sandbox restrictions. Final parent verification executed all 28 E2E cases, an 18-page/viewport axe scan and a zero-vulnerability network dependency audit. **Browser tests and network audit must not be assumed passed from test discovery or offline installation.**
 
 Public package caches used during the initial local build are not included in Git. Fresh clones use `npm ci`; `npm ci --offline` only works when the required package tarballs are already cached locally. No credentials are required by the website.
 
@@ -51,11 +51,11 @@ Astro was preferred in the assignment. The coding worker's restricted sandbox co
 | `src/lib/quote.ts` | Validation, safe selection storage parsing and plain-text enquiry summaries |
 | `src/client.ts` | Disclosure menu, live search, product selection and local quote workflow |
 | `scripts/` | Shared rendering, localized pages, metadata/schema, build and local static server |
-| `public/` | Styles, favicon, original illustrative photography and responsive WebP variants |
+| `public/` | Styles, favicon, EasyTask partner logo, original illustrative photography and responsive WebP variants |
 | `tests/` | Domain tests, generated-site/server integration tests and local-only Playwright E2E |
 | `dist/` | Generated HTML, scripts, assets, robots and sitemap; rebuild rather than edit |
 
-There are 42 localized route pages (40 indexable pages plus two noindex 404 pages), with an additional `404.html` hosting fallback. All content is available in static HTML. Product, Organization and BreadcrumbList JSON-LD use visible supported facts, without offers, ratings, phone numbers or fabricated commercial claims. FAQ answers are visible HTML; no special AI schema or AI text files are required.
+There are 42 localized route pages (40 indexable pages plus two noindex 404 pages), with an additional `404.html` hosting fallback. All content is available in static HTML. Organization (Afreen), the EasyTask AI Corp. partner Organization, WebSite, WebPage, Product and BreadcrumbList JSON-LD use visible supported facts, without offers, ratings, phone numbers or fabricated commercial claims. FAQ answers are visible HTML; no special AI schema or AI text files are required.
 
 Original Hermes-supplied `public/images/{id}.webp` files are preserved. Responsive `-480` and `-768` copies ship with the project, so building has no Python dependency. Optional asset maintenance uses `python3 scripts/optimize-images.py` with Pillow; it never overwrites an existing image. See `artifacts/image-provenance.json` for original image provenance. Photographs are AI illustrations, not actual facilities, varieties or stock.
 

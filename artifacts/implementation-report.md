@@ -165,4 +165,4 @@ Verification (from the project root):
 | `npm run build` | 0 | 42 localized pages, 40 canonical routes, sitemap and robots.txt. |
 | `npm run test:site` | 0 | 9 generated-site tests + 3 server/handler tests pass. |
 
-Not rerun in this session: `npm run test:e2e` and `npm audit`; no deployment occurred.
+Full gate rerun for this review (2026-10-31): `npm run check` 0; `npm test` 0 (12 unit tests); `npm run build` 0 (42 pages, 40 canonical routes); `npm run test:site` 0 (9 generated-site + 3 server tests); `npm run test:e2e` 0 (28/28); `npm audit` 0 (0 vulnerabilities). No deployment occurred.
